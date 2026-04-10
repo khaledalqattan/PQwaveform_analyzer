@@ -1,0 +1,3 @@
+C:/Users/K AlQattan/CLionProjects/PQwaveform_analyzer/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/K AlQattan/CLionProjects/PQwaveform_analyzer/cmake-build-debug/CMakeFiles/PQwaveform_analyzer.dir
+C:/Users/K AlQattan/CLionProjects/PQwaveform_analyzer/cmake-build-debug/CMakeFiles/rebuild_cache.dir
