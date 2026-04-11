@@ -1,8 +1,15 @@
-//
-// Created by K AlQattan on 4/10/2026.
-//
 
 #ifndef PQWAVEFORM_ANALYZER_WAVEFORM_H
 #define PQWAVEFORM_ANALYZER_WAVEFORM_H
 
+typedef struct {
+    double timestamp;
+    double phase_A_voltage;
+    double phase_B_voltage;
+    double phase_C_voltage;
+    double line_current;
+    double frequency;
+    double power_factor;
+    double thd_percent;
+} waveform; //structure for variable in the waveform
 #endif //PQWAVEFORM_ANALYZER_WAVEFORM_H
