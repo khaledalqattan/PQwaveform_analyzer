@@ -30,37 +30,37 @@ waveform* load_csv(const char* file, int* rows_count) {
             continue;
         data[count].timestamp = atof(token);
 //(2)
-        token = strtok(line, ",");
+        token = strtok(NULL, ",");
         if (token == NULL)
             continue;
         data[count].phase_A_voltage = atof(token);
 //(3)
-        token = strtok(line, ",");
+        token = strtok(NULL, ",");
         if (token == NULL)
             continue;
         data[count].phase_B_voltage = atof(token);
 //(4)
-        token = strtok(line, ",");
+        token = strtok(NULL, ",");
         if (token == NULL)
             continue;
         data[count].phase_C_voltage = atof(token);
 //(5)
-        token = strtok(line, ",");
+        token = strtok(NULL, ",");
         if (token == NULL)
             continue;
         data[count].line_current = atof(token);
 //(6)
-        token = strtok(line, ",");
+        token = strtok(NULL, ",");
         if (token == NULL)
             continue;
         data[count].frequency = atof(token);
 //(7)
-        token = strtok(line, ",");
+        token = strtok(NULL, ",");
         if (token == NULL)
             continue;
         data[count].power_factor =atof(token);
 //(8)
-        token = strtok(line, ",");
+        token = strtok(NULL, ",");
         if (token == NULL)
             continue;
         data[count].thd_percent = atof(token);
