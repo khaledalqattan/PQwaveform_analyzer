@@ -1,13 +1,13 @@
 # ninja log v5
-28	348	7978332274434350	CMakeFiles/PQwaveform_analyzer.dir/io.c.obj	d6e91a0309139452
-9	314	7978340743924303	CMakeFiles/PQwaveform_analyzer.dir/main.c.obj	b42eb483236f89cc
-27	317	7978340743934307	CMakeFiles/PQwaveform_analyzer.dir/waveform.c.obj	1ec63a49e0877ee5
-317	754	7978340748284666	PQwaveform_analyzer.exe	f717a30ca6e93f86
-9	329	7978341799863612	CMakeFiles/PQwaveform_analyzer.dir/main.c.obj	b42eb483236f89cc
-330	762	7978341804143967	PQwaveform_analyzer.exe	f717a30ca6e93f86
-10	328	7978342149678877	CMakeFiles/PQwaveform_analyzer.dir/main.c.obj	b42eb483236f89cc
-329	762	7978342153972935	PQwaveform_analyzer.exe	f717a30ca6e93f86
-28	338	7978355472586370	CMakeFiles/PQwaveform_analyzer.dir/io.c.obj	d6e91a0309139452
-8	342	7978355472586370	CMakeFiles/PQwaveform_analyzer.dir/main.c.obj	b42eb483236f89cc
+30	513	7978375149315574	CMakeFiles/PQwaveform_analyzer.dir/io.c.obj	d6e91a0309139452
+9	510	7978375149295554	CMakeFiles/PQwaveform_analyzer.dir/main.c.obj	b42eb483236f89cc
 41	343	7978355472596354	CMakeFiles/PQwaveform_analyzer.dir/waveform.c.obj	1ec63a49e0877ee5
-343	897	7978355478146793	PQwaveform_analyzer.exe	f717a30ca6e93f86
+521	1069	7978375154882878	PQwaveform_analyzer.exe	f717a30ca6e93f86
+18	816	7978379208020083	CMakeFiles/PQwaveform_analyzer.dir/io.c.obj	d6e91a0309139452
+817	1467	7978379214490587	PQwaveform_analyzer.exe	f717a30ca6e93f86
+9	406	7978380917056406	CMakeFiles/PQwaveform_analyzer.dir/io.c.obj	d6e91a0309139452
+407	952	7978380922379189	PQwaveform_analyzer.exe	f717a30ca6e93f86
+14	480	7978381222579032	CMakeFiles/PQwaveform_analyzer.dir/io.c.obj	d6e91a0309139452
+481	1195	7978381229699600	PQwaveform_analyzer.exe	f717a30ca6e93f86
+9	466	7978381828884434	CMakeFiles/PQwaveform_analyzer.dir/io.c.obj	d6e91a0309139452
+468	1052	7978381835164969	PQwaveform_analyzer.exe	f717a30ca6e93f86
