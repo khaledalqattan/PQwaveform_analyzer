@@ -4,10 +4,10 @@
 #include <string.h>
 
 waveform* load_csv(const char* file, int* rows_count) {
-    FILE *fb = fopen(file, "r");
+    FILE *fb = fopen(file, "r"); // open file
     if (fb == NULL) {
         printf("Error in opening the file"); //debug
-        return NULL; // open file
+        return NULL;
     }
     char line[256];
     if (fgets(line, sizeof(line), fb) == NULL) {

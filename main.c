@@ -38,7 +38,19 @@ int main(void){
     printf("phase B DC offset = %f\n", dcB);
     printf("phase C DC offset = %f\n", dcC);
     // test clipping
-
+    double clipA = Clipping_A(data, rows_count);
+    double clipB = Clipping_B(data, rows_count);
+    double clipC = Clipping_C(data, rows_count);
+    double clipT = clipA + clipB + clipC;
+    printf("number of clippings in phase A is %f\n", clipA);
+    printf("number of clippings in phase B is %f\n", clipB);
+    printf("number of clippings in phase C is %f\n", clipC);
+    printf("number of clippings in all phases is %f\n", clipT);
+    //  test tolerance
+    printf("For tolerance compliance Y = compliant , N = Not compliant\n");
+    printf("Phase A = %c\n", tolerance_check(rmsA));
+    printf("Phase B = %c\n", tolerance_check(rmsB));
+    printf("Phase C = %c\n", tolerance_check(rmsC));
 free(data); // malloc()
 return 0;
 }
