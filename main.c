@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "io.h"
-#include "cmake-build-debug/io.h"
+#include "io.h"
 #include <string.h>
 #include <math.h>
 

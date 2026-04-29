@@ -86,7 +86,7 @@ double DC_offset_C (const waveform *data, int rows_count) {
     return sum / rows_count;
 }
 // clipping
-double Clipping_A (const waveform*data, int rows_count) {
+int Clipping_A (const waveform*data, int rows_count) {
     int count = 0;
     for (int i=0; i < rows_count; i++){
         if (fabs(data[i].phase_A_voltage) >= 324.9 ){   // fabs() for absulute value
@@ -95,7 +95,7 @@ double Clipping_A (const waveform*data, int rows_count) {
     }
     return count;
 }
-double Clipping_B (const waveform*data, int rows_count) {
+int Clipping_B (const waveform*data, int rows_count) {
     int count = 0;
     for (int i=0; i < rows_count; i++){
         if (fabs(data[i].phase_B_voltage) >= 324.9 ){   // fabs() for absulute value
@@ -104,7 +104,7 @@ double Clipping_B (const waveform*data, int rows_count) {
     }
     return count;
 }
-double Clipping_C (const waveform*data, int rows_count) {
+int Clipping_C (const waveform*data, int rows_count) {
     int count = 0;
     for (int i=0; i < rows_count; i++){
         if (fabs(data[i].phase_C_voltage) >= 324.9 ){   // fabs() for absulute value

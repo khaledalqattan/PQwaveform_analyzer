@@ -21,8 +21,8 @@ double peak_peak_C (const waveform *data, int rows_count); // peak to peak C
 double DC_offset_A (const waveform *data, int rows_count); // DC offset A
 double DC_offset_B (const waveform *data, int rows_count); // DC offset B
 double DC_offset_C (const waveform *data, int rows_count); // DC offset C
-double Clipping_A (const waveform*data, int rows_count); // Clipping A
-double Clipping_B (const waveform*data, int rows_count); // clipping B
-double Clipping_C (const waveform*data, int rows_count); // clipping C
+int Clipping_A (const waveform*data, int rows_count); // Clipping A
+int Clipping_B (const waveform*data, int rows_count); // clipping B
+int Clipping_C (const waveform*data, int rows_count); // clipping C
 char tolerance_check (double rms); // tolerance check
 #endif //PQWAVEFORM_ANALYZER_WAVEFORM_H

@@ -3,4 +3,4 @@ project(PQwaveform_analyzer C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(PQwaveform_analyzer main.c cmake-build-debug/waveform.c cmake-build-debug/waveform.h cmake-build-debug/io.c cmake-build-debug/io.h)
+add_executable(PQwaveform_analyzer main.c waveform.c waveform.h io.c io.h)

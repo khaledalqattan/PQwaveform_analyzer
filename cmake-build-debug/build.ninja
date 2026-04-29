@@ -66,13 +66,13 @@ build CMakeFiles/PQwaveform_analyzer.dir/main.c.obj: C_COMPILER__PQwaveform_anal
   OBJECT_DIR = CMakeFiles\PQwaveform_analyzer.dir
   OBJECT_FILE_DIR = CMakeFiles\PQwaveform_analyzer.dir
 
-build CMakeFiles/PQwaveform_analyzer.dir/waveform.c.obj: C_COMPILER__PQwaveform_analyzer_Debug C$:/Users/K$ AlQattan/CLionProjects/PQwaveform_analyzer/cmake-build-debug/waveform.c || cmake_object_order_depends_target_PQwaveform_analyzer
+build CMakeFiles/PQwaveform_analyzer.dir/waveform.c.obj: C_COMPILER__PQwaveform_analyzer_Debug C$:/Users/K$ AlQattan/CLionProjects/PQwaveform_analyzer/waveform.c || cmake_object_order_depends_target_PQwaveform_analyzer
   DEP_FILE = CMakeFiles\PQwaveform_analyzer.dir\waveform.c.obj.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles\PQwaveform_analyzer.dir
   OBJECT_FILE_DIR = CMakeFiles\PQwaveform_analyzer.dir
 
-build CMakeFiles/PQwaveform_analyzer.dir/io.c.obj: C_COMPILER__PQwaveform_analyzer_Debug C$:/Users/K$ AlQattan/CLionProjects/PQwaveform_analyzer/cmake-build-debug/io.c || cmake_object_order_depends_target_PQwaveform_analyzer
+build CMakeFiles/PQwaveform_analyzer.dir/io.c.obj: C_COMPILER__PQwaveform_analyzer_Debug C$:/Users/K$ AlQattan/CLionProjects/PQwaveform_analyzer/io.c || cmake_object_order_depends_target_PQwaveform_analyzer
   DEP_FILE = CMakeFiles\PQwaveform_analyzer.dir\io.c.obj.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles\PQwaveform_analyzer.dir
