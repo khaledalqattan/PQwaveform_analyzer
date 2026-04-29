@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include "io.h"
 #include <string.h>
+#include <math.h>
 
 waveform* load_csv(const char* file, int* rows_count) {
     FILE *fb = fopen(file, "r"); // open file
@@ -117,6 +118,19 @@ void Results_txt(const waveform *data, int rows_count){
     fprintf(rf,"Phase A = %c\n", tolerance_check(rmsA));
     fprintf(rf,"Phase B = %c\n", tolerance_check(rmsB));
     fprintf(rf,"Phase C = %c\n", tolerance_check(rmsC));
-
+    // test variance
+    double Va = variance_A(data, rows_count);
+    double Vb = variance_B(data, rows_count);
+    double Vc = variance_C(data, rows_count);
+    fprintf(rf,"variance of phase A= %lf\n", Va);
+    fprintf(rf,"variance of phase B= %lf\n", Vb);
+    fprintf(rf,"variance of phase C= %lf\n", Vc);
+    // test Standard deviation
+    double std_A = sqrt(Va);
+    double std_B = sqrt(Vb);
+    double std_C = sqrt(Vc);
+    fprintf(rf,"Standard deviation for phase A= %lf\n", std_A);
+    fprintf(rf,"Standard deviation for phase B= %lf\n", std_B);
+    fprintf(rf,"Standard deviation for phase C= %lf\n", std_C);
     fclose(rf);
 }

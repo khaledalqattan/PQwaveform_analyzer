@@ -25,4 +25,7 @@ int Clipping_A (const waveform*data, int rows_count); // Clipping A
 int Clipping_B (const waveform*data, int rows_count); // clipping B
 int Clipping_C (const waveform*data, int rows_count); // clipping C
 char tolerance_check (double rms); // tolerance check
+double variance_A (const waveform*data, int rows_count); // variance A
+double variance_B (const waveform*data, int rows_count); // variance B
+double variance_C (const waveform*data, int rows_count); // variance C
 #endif //PQWAVEFORM_ANALYZER_WAVEFORM_H

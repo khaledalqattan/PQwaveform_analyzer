@@ -121,3 +121,46 @@ char tolerance_check (double rms){
         return 'N';
     }
 }
+// variance and std dev
+double variance_A (const waveform*data, int rows_count) {
+    double mean = 0;
+    double sum = 0;
+    double diff;
+    for (int i=0; i < rows_count; i++) {
+        mean += data[i].phase_A_voltage;
+        mean = mean / rows_count;//same as DC offset
+      for (int i=0; i < rows_count; i++){
+            diff = data[i].phase_A_voltage - mean;
+            sum += diff * diff;
+        }
+        return sum / rows_count;
+    }
+}
+double variance_B (const waveform*data, int rows_count) {
+    double mean = 0;
+    double sum = 0;
+    double diff;
+    for (int i=0; i < rows_count; i++) {
+        mean += data[i].phase_B_voltage;
+        mean = mean / rows_count;//same as DC offset
+        for (int i=0; i < rows_count; i++){
+            diff = data[i].phase_B_voltage - mean;
+            sum += diff * diff;
+        }
+        return sum / rows_count;
+    }
+}
+double variance_C (const waveform*data, int rows_count) {
+    double mean = 0;
+    double sum = 0;
+    double diff;
+    for (int i=0; i < rows_count; i++) {
+        mean += data[i].phase_C_voltage;
+        mean = mean / rows_count;//same as DC offset
+        for (int i=0; i < rows_count; i++){
+            diff = data[i].phase_C_voltage - mean;
+            sum += diff * diff;
+        }
+        return sum / rows_count;
+    }
+}
