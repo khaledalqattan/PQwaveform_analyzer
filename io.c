@@ -7,7 +7,7 @@
 waveform* load_csv(const char* file, int* rows_count) {
     FILE *fb = fopen(file, "r"); // open file
     if (fb == NULL) {
-        printf("Error in opening the file"); //debug
+        printf("Error in opening the file");
         return NULL;
     }
     char line[256];
@@ -73,8 +73,8 @@ waveform* load_csv(const char* file, int* rows_count) {
         count++;
     }
 
-    fclose(fb); //close file
-    return data; // return pointer to apply dynamic allocation malloc()
+    fclose(fb);
+    return data;
 }
 void Results_txt(const waveform *data, int rows_count){
     FILE *rf = fopen("results.txt", "w");
